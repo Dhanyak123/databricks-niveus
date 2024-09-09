@@ -78,3 +78,7 @@ variable "master_ip_range" {
   type = string
   
 }
+
+variable "cmek_resource_id" {
+  type = string
+}

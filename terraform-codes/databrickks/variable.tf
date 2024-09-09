@@ -77,6 +77,10 @@ variable "master_ip_range" {
   
 }
 
+variable "cmek_resource_id" {
+  type = string 
+}
+
 ################################################################################################################
 variable "cluster_name" {
     type = string

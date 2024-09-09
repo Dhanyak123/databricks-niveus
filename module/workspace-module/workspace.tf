@@ -1,3 +1,11 @@
+resource "databricks_mws_customer_managed_keys" "cmek" {
+  account_id = var.databricks_account_id
+  gcp_key_info {
+    kms_key_id = var.cmek_resource_id
+  }
+  use_cases = ["MANAGED_SERVICES"]
+}
+
 resource "databricks_mws_workspaces" "databricks_workspace" {
   provider       = databricks.accounts
   account_id     = var.databricks_account_id
@@ -20,9 +28,11 @@ resource "databricks_mws_workspaces" "databricks_workspace" {
   token {
     comment = "Terraform token"
   }
-depends_on = [databricks_mws_networks.databricks_network ]
+
+
+depends_on = [databricks_mws_networks.databricks_network,databricks_mws_customer_managed_keys.cmek ]
   # this makes sure that the NAT is created for outbound traffic before creating the workspace
   # depends_on = [google_compute_router_nat.nat]
 }
 
- 
+

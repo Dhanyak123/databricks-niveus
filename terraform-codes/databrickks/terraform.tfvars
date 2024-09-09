@@ -7,7 +7,7 @@
   master_ip_range = "10.91.0.0/28"
   delegate_from = [ "user:dhanyashree.k@niveussolutions.com" ]
   databricks_google_service_account = "databrickss-sa2@poc-serviceproject-databricks.iam.gserviceaccount.com"
-  
+  cmek_resource_id = ""
 
 
 

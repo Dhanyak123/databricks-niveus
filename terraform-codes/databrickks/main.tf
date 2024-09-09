@@ -16,6 +16,7 @@ module "gcp-byovpc" {
   network_project_id = var.network_project_id
   connectivity_type = var.connectivity_type
   master_ip_range = var.master_ip_range
+  cmek_resource_id = var.cmek_resource_id
 }
 
 module "compute" {
