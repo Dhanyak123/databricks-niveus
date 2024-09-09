@@ -32,10 +32,10 @@ module "compute" {
 }
 
 
-data "google_secret_manager_secret_version" "bigquery" {
-  secret = var.bigquery_secret
-  project= var.bigquery_project
-}
+# data "google_secret_manager_secret_version" "bigquery" {
+#   secret = var.bigquery_secret
+#   project= var.bigquery_project
+# }
   
 module "bigquery" {
   source = "../../module/bigquery"
@@ -48,10 +48,10 @@ module "bigquery" {
   databricks_host_1 = var.databricks_host_1
 }
 
-data "google_secret_manager_secret_version" "storage" {
-  secret = var.gcs_secret
-  project= var.gcs_project
-}
+# data "google_secret_manager_secret_version" "storage" {
+#   secret = var.gcs_secret
+#   project= var.gcs_project
+# }
 
 module "storage" {
   source = "../../module/storage"
