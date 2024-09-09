@@ -69,3 +69,12 @@ variable "network_name" {
   type        = string
   description = "Name of the network to use"
 }
+
+variable "connectivity_type" {
+  type = string
+}
+
+variable "master_ip_range" {
+  type = string
+  
+}

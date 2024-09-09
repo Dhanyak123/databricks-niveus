@@ -68,3 +68,138 @@ variable "subnet_region" {
   description = "subnet region"
   
 }
+variable "connectivity_type" {
+  type = string
+}
+
+variable "master_ip_range" {
+  type = string
+  
+}
+
+################################################################################################################
+variable "cluster_name" {
+    type = string
+    description = "Name of the cluster"
+}
+
+variable "spark_version" {
+    type = string
+    description = "version of spark"
+}
+
+variable "node_type_id" {
+    type = string
+    description = "type of node to be used"
+}
+
+variable "autotermination_minutes" {
+    type = number
+}
+
+variable "min_workers" {
+    type = number
+}
+
+variable "max_workers" {
+    type = number
+  
+}
+
+variable "spark_conf" {
+    type = map(string)
+  
+}
+
+variable "databricks_host" {
+  type = string
+  
+}
+
+variable "databricks_google_service_account_1" {
+  type = string
+  
+}
+
+variable "bigquery_secret" {
+  type = string
+  
+}
+
+variable "bigquery_project" {
+  type = string
+}
+
+#####################
+variable "bigquery_name" {
+    type = string
+    description = "secret scope name of bigqery"
+}
+
+variable "initial_manage_principal" {
+    type = string
+}
+
+variable "bigquery_key" {
+    type = string
+}
+
+# variable "bigquery_string_value" {
+#     type = string
+# }
+
+variable "google_project_1" {
+  type = string 
+}
+
+variable "databricks_google_service_account_2" {
+  type = string
+}
+
+variable "databricks_host_1" {
+  type = string
+}
+
+##################################################
+variable "gcs_name" {
+    type = string
+}
+
+variable "location" {
+    type = string
+}
+
+variable "gcs_key" {
+   type = string
+}
+
+variable "gcs_scope_name" {
+  type = string
+}
+
+# variable "gcs_string_value" {
+#   type = string
+# }
+
+variable "databricks_host_2" {
+  type = string
+}
+
+variable "databricks_google_service_account_3" {
+  type = string
+}
+
+variable "google_project_2" {
+  type = string
+}
+variable "gcs_secret" {
+  type = string
+  
+}
+
+variable "gcs_project" {
+  type = string
+}
+
+####################################################################
+
