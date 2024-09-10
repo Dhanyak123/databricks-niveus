@@ -9,7 +9,7 @@
   databricks_google_service_account = "databrickss-sa2@poc-serviceproject-databricks.iam.gserviceaccount.com"
   cmek_resource_id = ""
 
- network_name          = "terraform-network"
+  network_name          = "terraform-network"
   subnet_id = "terraform-subnet"
   subnet_region = "asia-south1"
   pod_ip_range_name = "pods"
@@ -35,7 +35,7 @@
   ######################################################################################################
   bigquery_secret = ""
   bigquery_project = ""
-   bigquery_name= ""
+  bigquery_name= ""
   initial_manage_principal = "users"
   bigquery_key = ""
   google_project_1 = " "
