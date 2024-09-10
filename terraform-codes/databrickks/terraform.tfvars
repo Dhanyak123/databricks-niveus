@@ -9,8 +9,6 @@
   databricks_google_service_account = "databrickss-sa2@poc-serviceproject-databricks.iam.gserviceaccount.com"
   cmek_resource_id = ""
 
-
-
  network_name          = "terraform-network"
   subnet_id = "terraform-subnet"
   subnet_region = "asia-south1"
